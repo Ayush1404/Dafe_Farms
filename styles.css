@@ -1,0 +1,349 @@
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+}
+
+/* common styling */
+
+input:focus,textarea:focus{
+    outline: none;
+}
+
+/* navbar styles*/
+header {
+    color: #333;
+    margin-top: 2.5%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.navbar_mobile{
+    display: none;
+}
+
+/* introduction container styles */
+
+
+.introduction_container {
+    position: relative;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.introduction_container h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.introduction_container_img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.introduction_container button {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F0FF42;
+    border-radius: 32px;
+    border: none;
+    padding: 15px 90px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.introduction_container button p{
+    display: flex;
+    align-items: center;
+}
+
+.right-arrow-sign{
+
+    margin-left: 4px;
+}
+.right-arrow-sign img{
+    width: 16px;
+    height: 16px;
+}
+
+/*compony logo container*/
+
+.compony_logo_container {
+    margin: 4% 15%;
+}
+.compony_logo_container img{
+    margin: 0 3.5%;
+}
+.compony_logo_container img.puro_earth_logo
+{
+    width: 15%;
+}
+.compony_logo_container img.c_logo
+{
+    width: 7%;
+}
+.compony_logo_container img.ithaka_logo
+{
+    width: 15%;
+}
+.compony_logo_container img.climate_care_logo
+{
+    width: 30%;
+}
+
+/* carbon project container*/
+
+.blue_color{
+    background-color: #104F5D;
+}
+.carbon_project_container{ 
+    padding: 5% 0;
+    max-width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+    color: #FFFFFF;
+}
+.carbon_project_container h2{ 
+    font-size: 3rem;
+    font-weight:300 ;
+}
+.carbon_project_container h1{ 
+    color: yellow;
+    font-size: 3rem;
+    font-weight:600 ;
+}
+.carbon_project_container button{
+    
+    font-weight: 600;
+    background-color: #F0FF42;
+    border-radius: 32px;
+    border: none;
+    padding: 15px 60px;
+    font-size: 0.75rem;
+}
+
+/*  maharashtra map container   */
+
+.maharashtra_map_container{
+    position: relative;
+}
+.maharashtra_map_container button{
+    font-weight: 600;
+    background-color: #F0FF42;
+    border-radius: 32px;
+    border: none;
+    padding: 15px 30px;
+    font-size: 0.75rem;
+}
+
+.project_maharastra_title{
+    position: absolute;
+    width: inherit;
+    bottom: 65%;
+}
+/* values container */
+.values_container{
+    padding: 3.5% 0;
+    max-width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.values_container h1{
+    font-size: 3rem;
+    color: #F0FF42;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.values_container h3{
+    color: #A6E5FF;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+/* contact us container */
+.contact_us_container{
+    margin: 5% 0%;
+    max-width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.contact_us_container .form_container {
+    background-color: #F0FF42; 
+    padding: 50px; 
+    border-radius: 25px; 
+}
+
+.contact_us_container .contact_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_us_container input,
+.contact_us_container textarea {
+    background-color: #F0FF42; 
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000; 
+    border-radius: 10px; 
+}
+
+.contact_us_container input::placeholder,
+.contact_us_container textarea::placeholder {
+    color: #ADB45C; 
+}
+
+.contact_us_container button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact_us_container button:hover {
+    background-color: #333333;
+}
+
+.contact_us_container h2{
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+/* footer styles*/
+
+footer{
+    background-color: #000;
+    color: #FFF;
+}
+
+footer .container{
+    margin: 0;
+    padding: 5% 0%;
+    max-width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+footer input{
+    color: #fff;
+    background-color: #000;
+    border: none;
+    padding-bottom:10px ;
+    border-bottom: 1px solid white;
+    width: 90%;
+}
+
+footer .sign_up_for_update_form button{
+    color: #FD56A6;
+    background-color: inherit;
+    border: none;
+}
+
+footer .sign_up_for_update_form button .send_text{
+    display: none;
+}
+
+
+/* mobile specific styling*/
+@media screen and (max-width: 768px) {
+    .navbar_lg{
+        display: none;
+    }
+    .navbar_mobile{
+        display: flex;
+    }
+    .navbar-toggler{
+        border: none;
+    }
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    .introduction_container button {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        margin: 0 auto;
+        padding: 18px 32px;
+    }
+
+    .introduction_container h1 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .compony_logo_container {
+        margin: 2vh 7%;
+    }
+    .compony_logo_container img{
+        margin: 0 3.5%;
+    }
+    .compony_logo_container img.puro_earth_logo
+    {
+        width: 15%;
+    }
+    .compony_logo_container img.c_logo
+    {
+        width: 7%;
+    }
+    .compony_logo_container img.ithaka_logo
+    {
+        width: 15%;
+    }
+    .compony_logo_container img.climate_care_logo
+    {
+        width: 30%;
+    }
+
+
+    .carbon_project_container h2{ 
+        font-size: 2rem;
+        font-weight:300 ;
+    }
+    .carbon_project_container h1{ 
+        color: yellow;
+        font-size: 2rem;
+        font-weight:600 ;
+    }
+    .maharashtra_map_container{
+        margin: 0 7%;
+        width: 86%;
+    }
+    .project_maharastra_title{
+        margin-top: 4%;
+        font-size: 2rem;
+        position: static;
+        width: inherit;
+        bottom: 65%;
+    }
+    .maharashtra_map_container #maharashtra_map{
+        opacity: 0.6;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .maharashtra_map_container{
+        margin-top:  5%;
+    }
+    
+    footer .sign_up_for_update_form button {
+        margin-top: 12px;
+        position: relative;
+        left: 60%;
+    }
+    footer .sign_up_for_update_form button .send_text{
+        display: inline;
+        padding-right:10px ;
+    }
+    
+
+}
